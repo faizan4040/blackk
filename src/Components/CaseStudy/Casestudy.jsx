@@ -13,42 +13,42 @@ function Casestudy() {
 const testimonialls = [
       {
         id: 1,
-        image: img.Profile,
+        image: img.Profiles_1,
         title: "Fashion Entrepreneur",
         description:
           "She had a passion for blending fashion with sustainability but was struggling to find a loyal audience. We focused on creating content that highlighted her brand's values and aligned it with trends that mattered to her ideal customers. With targeted posts on LinkedIn and Instagram, her audience grew by 40%, and she secured key partnerships with eco-friendly brands, bringing her closer to securing funding for her next collection.",
       },
       {
         id: 2,
-        image: img.Profile,
+        image: img.Profiles_2,
         title: "B2B SaaS Startup",
         description:
           "They came to us with one key challenge: they needed to reach more decision-makers in their industry. We built a content strategy that included insightful blog posts, case studies, and engaging. social media campaigns. The result? A 30% boost in demo requests and a 15% increase in monthly inbound inquiries, which directly impacted their sales pipeline and conversion rates. ",
       },
       {
         id: 3,
-        image: img.Profile,
+        image: img.Profile_6,
         title: "Health Coach",
         description:
           "Her goal was to build trust in her expertise and expand her client base. We created a mix of motivational posts and educational content about healthy living. By sharing client success stories and personal tips, she became a go-to resource for health and wellness. Her followers doubled in just three months, and she saw a 25% increase in direct messages from people wanting to book consultations.",
       },
       {
         id: 4,
-        image: img.Profile,
+        image: img.Profiles_3,
         title: "Finance Expert",
         description:
           "He wanted to become a more recognizable figure in the finance industry and generate leads through his social media channels. After analyzing his audience, we tailored his content to provide a mix of financial tips, industry insights, and personal stories about overcoming challenges. His LinkedIn following grew by 50%, and he gained 5+ speaking opportunities, along with partnerships with fintech companies.",
       },
       {
         id: 5,
-        image: img.Profile,
+        image: img.Profile_4,
         title: "E-commerce Brand",
         description:
           "This client was struggling to connect with the right audience for their sustainable product line. We created a targeted content strategy that focused on the brand’s eco-conscious values and shared real-life stories of how their products were made. This approach resulted in a 35% increase in engagement and a 20% growth in online sales within just two months.",
       },
       {
         id: 6,
-        image: img.Profile,
+        image: img.Profile_5,
         title: "Real Estate Developer",
         description:
           "His goal was simple: he wanted to position himself as a thought leader in the luxury real estate space. We helped him create a consistent flow of content across multiple platforms, focusing on trends in luxury homes, investment opportunities, and personal success stories. As a result, he saw a 40% increase in inbound leads and secured high-value property deals worth over $5 million within three months.",
@@ -93,7 +93,7 @@ const testimonialls = [
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.5 }}
-                className="absolute w-full h-full rounded-2xl overflow-hidden shadow-lg border-b-4 border-yellow-300 bg-stone-900 object-cover"
+                className="absolute w-full h-full rounded-2xl overflow-hidden shadow-lg border-b-4 border-yellow-300 bg-stone-900 lg:object-cover"
               />
             </div>
           </div>

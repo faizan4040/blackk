@@ -1,14 +1,7 @@
-import Logo from "../image/logo.png";
-import body from "../image/body.png";
 import Ellipse from "../image/Ellipse.png";
 import object from "../image/objects.png";
-import Linkedin from "../image/Linkedin.png";
 import Vector from "../image/Vector.png";
 import Group from "../image/Group.png";
-import baby from "../image/baby.png";
-import People_1 from "../image/People-1.png";
-import People_2 from "../image/People-2.png";
-import People_3 from "../image/People-3.png";
 import trade from "../image/trade.png";
 import shadow from "../image/shadow.png";
 import circle from "../image/circle.svg";
@@ -18,7 +11,6 @@ import Groups from "../image/Groups.png";
 import Tag from "../image/Tag.png";
 import author from "../image/author.png";
 import pattern from "../image/pattern.png";
-import Rectangle from "../image/Rectangle.png";
 import Profile from "../image/Profile.png";
 import Client_1 from "../image/client1.png";
 import Client_2 from "../image/client2.png";
@@ -51,24 +43,20 @@ import Seventeen from '../image/Seventeen.png'
 import Eighteen from '../image/Eighteeen.png'
 import Ninteen from '../image/Ninteenss.png'
 import Twenty from '../image/Twenty.png'
-import Onboarding from '../image/Onboarding.png'
-import Planing from '../image/Planing.gif'
-import Optimization from '../image/Optimization.png'
 import Profile_1 from '../image/profile_1.png'
 import Profile_2 from '../image/profile_2.png'
 import Profile_3 from '../image/profile_3.png'
-import Planning from '../image/Planing.png'
 
-
-
-
-
-
-
-
-
-
-
+import Profiles_1 from '../image/Profiles_1.png'
+import Profiles_2 from '../image/Profiles_2.png'
+import Profiles_3 from '../image/Profiles_3.png'
+import Profile_4 from '../image/Profile_4.png'
+import Profile_5 from '../image/Profile_5.png'
+import Profile_6 from '../image/Profile_6.png'
+import OnboardingCall from '../image/OnboardingCall.gif'
+import Plannings from '../image/Plannings.gif'
+import Execution from '../image/Execution.gif'
+import Optimizations from '../image/Optimizations.gif'
 
 
 
@@ -84,17 +72,10 @@ import Planning from '../image/Planing.png'
 
 
 export const img = {
-  Logo,
-  body,
   Ellipse,
   object,
-  Linkedin,
   Vector,
   Group,
-  baby,
-  People_1,
-  People_2,
-  People_3,
   trade,
   shadow,
   circle,
@@ -104,7 +85,6 @@ export const img = {
   Tag,
   author,
   pattern,
-  Rectangle,
   Profile,
   Client_1,
   Client_2,
@@ -137,13 +117,18 @@ export const img = {
   Eighteen,
   Ninteen,
   Twenty,
-  Onboarding,
-  Planing,
-  Optimization,
   Profile_1,
   Profile_2,
   Profile_3,
-  Planning
+  Profiles_2,
+  Profiles_1,
+  Profiles_3,
+  Profile_4,  
+  Profile_5,
+  Profile_6,
+  OnboardingCall,
+  Plannings,
+  Execution,
+  Optimizations,
 
-  
 };
