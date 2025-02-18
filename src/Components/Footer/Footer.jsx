@@ -9,7 +9,8 @@ import { SiGoogleearth } from "react-icons/si";
 
 function Footer() {
   return (
-    <div className="w-full bg-black py-6 text-white text-sm font-medium relative">
+    <div >
+    <div className=" w-full bg-black py-6 text-white text-sm font-medium relative">
       <div className="flex justify-center mb-18 -mt-40">
         <div className="flex lg:space-x-8 ">
           <a
@@ -33,7 +34,7 @@ function Footer() {
             <FaFacebook className="text-xl text-white h-10 w-10" />
           </a>
           <a
-            href="https://www.instagram.com/xorivotech/"
+            href="https://www.instagram.com/themarketerali/"
             target="_blank"
             data-aos="zoom-in-up"
             className="p-3 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 
@@ -43,7 +44,7 @@ function Footer() {
             <FaInstagram className="text-xl text-white h-10 w-10" />
           </a>
           <a
-            href="https://www.linkedin.com/company/xorivotechmarketing/"
+            href="https://www.linkedin.com/in/themarketerali/"
             target="_blank"
             data-aos="zoom-in-up"
             className="p-3 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 
@@ -53,7 +54,7 @@ function Footer() {
             <FaLinkedinIn className="text-xl text-white h-10 w-10" />
           </a>
           <a
-            href="https://x.com/xorivotech?mx=2"
+            href="https://x.com/themarketerali"
             target="_blank"
             data-aos="zoom-in-up"
             className="p-3 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 
@@ -65,7 +66,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center px-6 sm:px-10 text-center sm:text-left">
+      <div className=" max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center px-6 sm:px-10 text-center sm:text-left">
         <a href="https://zectagon.com" target="_blank" className="mb-4 sm:mb-0">
           &copy; 2025. Designed & Developed by Zectagon. All rights reserved.
         </a>
@@ -81,6 +82,7 @@ function Footer() {
           ))}
         </ul>
       </div>
+    </div>
     </div>
   );
 }

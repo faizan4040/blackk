@@ -31,6 +31,49 @@ import circles_2 from '../image/circles_2.png'
 import Frames_2 from '../image/Frames_2.png'
 import owner from '../image/owner.jpeg'
 import objectss from '../image/objectss.png'
+import One from '../image/One.png'
+import Two from '../image/Two.png'
+import Three from '../image/Three.png'
+import Four from '../image/Four.png'
+import Five from '../image/Five.png'
+import Six from '../image/Six.png'
+import Seven from '../image/Seven.png'
+import Eight from '../image/Eight.png'
+import Nine from '../image/Nine.png'
+import Ten from '../image/Ten.png'
+import Eleven from '../image/Eleven.png'
+import Twelve from '../image/Twelve.png'
+import Thirteen from '../image/Thirteen.png'
+import Fourteen from '../image/Fourteen.png'
+import Fifteen from '../image/Fifteen.png'
+import Sixteen from '../image/Sixteen.png'
+import Seventeen from '../image/Seventeen.png'
+import Eighteen from '../image/Eighteeen.png'
+import Ninteen from '../image/Ninteenss.png'
+import Twenty from '../image/Twenty.png'
+import Onboarding from '../image/Onboarding.png'
+import Planing from '../image/Planing.gif'
+import Optimization from '../image/Optimization.png'
+import Profile_1 from '../image/profile_1.png'
+import Profile_2 from '../image/profile_2.png'
+import Profile_3 from '../image/profile_3.png'
+import Planning from '../image/Planing.png'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,5 +116,34 @@ export const img = {
   circles_2,
   Frames_2,
   owner,
-  objectss
+  objectss,
+  One,
+  Two,
+  Three,
+  Four,
+  Five,
+  Six,
+  Seven,
+  Eight,
+  Nine,
+  Ten,
+  Eleven,
+  Twelve,
+  Thirteen,
+  Fourteen,
+  Fifteen,
+  Sixteen,
+  Seventeen,
+  Eighteen,
+  Ninteen,
+  Twenty,
+  Onboarding,
+  Planing,
+  Optimization,
+  Profile_1,
+  Profile_2,
+  Profile_3,
+  Planning
+
+  
 };
