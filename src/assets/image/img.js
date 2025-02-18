@@ -11,7 +11,6 @@ import Groups from "../image/Groups.png";
 import Tag from "../image/Tag.png";
 import author from "../image/author.png";
 import pattern from "../image/pattern.png";
-import Profile from "../image/Profile.png";
 import Client_1 from "../image/client1.png";
 import Client_2 from "../image/client2.png";
 import Client_3 from "../image/client3.png";
@@ -85,7 +84,6 @@ export const img = {
   Tag,
   author,
   pattern,
-  Profile,
   Client_1,
   Client_2,
   Client_3,
