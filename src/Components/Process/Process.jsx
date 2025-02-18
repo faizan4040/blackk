@@ -5,7 +5,7 @@ import {RiNumber1,RiNumber2,RiNumber3,RiNumber4} from "react-icons/ri";
 
 function Process() {
 
-  const [selectedOption, setSelectedOption] = useState("OnboardingCall");
+const [selectedOption, setSelectedOption] = useState("OnboardingCall");
 
 const options = [
     { name: 'Onboarding Call' },
