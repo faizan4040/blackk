@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from "react";
 import { img } from "../../assets/image/img";
 import { motion } from "framer-motion";
 import { Element } from "react-scroll";
 
+
+
+
+
 function Casestudy() {
 
-      const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
 
 
@@ -16,21 +20,21 @@ const testimonialls = [
         image: img.Profiles_1,
         title: "Fashion Entrepreneur",
         description:
-          "She had a passion for blending fashion with sustainability but was struggling to find a loyal audience. We focused on creating content that highlighted her brand's values and aligned it with trends that mattered to her ideal customers. With targeted posts on LinkedIn and Instagram, her audience grew by 40%, and she secured key partnerships with eco-friendly brands, bringing her closer to securing funding for her next collection.",
+          "He had a passion for blending fashion with sustainability but was struggling to find a loyal audience. We focused on creating content that highlighted his brand's values and aligned it with trends that mattered to his ideal customers. With targeted posts on LinkedIn and Instagram, his audience grew by 40%, and he secured key partnerships with eco-friendly brands, bringing his closer to securing funding for his next collection.",
       },
       {
         id: 2,
         image: img.Profiles_2,
         title: "B2B SaaS Startup",
         description:
-          "They came to us with one key challenge: they needed to reach more decision-makers in their industry. We built a content strategy that included insightful blog posts, case studies, and engaging. social media campaigns. The result? A 30% boost in demo requests and a 15% increase in monthly inbound inquiries, which directly impacted their sales pipeline and conversion rates. ",
+          "They came to us with one key challenge: they needed to reach more decision-makers in their industry. We built a content strategy that included insightful blog posts, case studies, and engaging social media campaigns. The result? A 30% boost in demo requests and a 15% increase in monthly inbound inquiries, which directly impacted their sales pipeline and conversion rates. ",
       },
       {
         id: 3,
         image: img.Profile_6,
         title: "Health Coach",
         description:
-          "Her goal was to build trust in her expertise and expand her client base. We created a mix of motivational posts and educational content about healthy living. By sharing client success stories and personal tips, she became a go-to resource for health and wellness. Her followers doubled in just three months, and she saw a 25% increase in direct messages from people wanting to book consultations.",
+          "His goal was to build trust in his expertise and expand his client base. We created a mix of motivational posts and educational content about healthy living. By sharing client success stories and personal tips, he became a go-to resource for health and wellness. His followers doubled in just three months, and he saw a 25% increase in direct messages from people wanting to book consultations.",
       },
       {
         id: 4,
@@ -58,11 +62,22 @@ const testimonialls = [
 
 
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % testimonialls.length);
+    }, 5000); 
+
+    return () => clearInterval(interval); 
+  }, [testimonialls.length]);
+
 
   return (
     <div>
 
-<Element name="casestudies" className="py-8 px-4 sm:px-8 md:px-16 bg-black w-full flex flex-col items-center relative">
+<Element
+      name="casestudies"
+      className="py-8 px-4 sm:px-8 md:px-16 bg-black w-full flex flex-col items-center relative"
+    >
       <div className="w-full max-w-5xl flex flex-col items-center">
         <div data-aos="slide-down" className="text-center">
           <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold">
@@ -73,55 +88,53 @@ const testimonialls = [
           Transformative Personal Branding Journeys with Our Proven Services
         </p>
 
-
         <div className="flex flex-col items-center justify-center w-full mt-10 gap-10 max-w-6xl">
-        <motion.div
-          key={testimonialls[index].id} 
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -50 }}
-          transition={{ duration: 0.5 }}
-          className="flex flex-col lg:flex-row items-center justify-center w-full gap-10"
-        >
-          <div className="relative flex flex-col items-center justify-center w-full max-w-[90%] sm:max-w-lg h-[450px]">
-            <div className="relative w-full h-[350px]">
-              <motion.img
-                key={testimonialls[index]?.id}
-                src={testimonialls[index]?.image}
-                alt="Testimonial"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.5 }}
-                className="absolute w-full h-full rounded-2xl overflow-hidden shadow-lg border-b-4 border-yellow-300 bg-stone-900 lg:object-cover"
-              />
+          <motion.div
+            key={testimonialls[index].id}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-col lg:flex-row items-center justify-center w-full gap-10"
+          >
+            <div className="relative flex flex-col items-center justify-center w-full max-w-[90%] sm:max-w-lg h-[450px]">
+              <div className="relative w-full h-[350px]">
+                <motion.img
+                  key={testimonialls[index]?.id}
+                  src={testimonialls[index]?.image}
+                  alt="Testimonial"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.5 }}
+                  className="absolute w-full h-full rounded-2xl overflow-hidden shadow-lg border-b-4 border-yellow-300 bg-stone-900 lg:object-cover"
+                />
+              </div>
             </div>
-          </div>
 
-          <div className="w-full lg:w-1/2 px-4 sm:px-6 text-center lg:text-left">
-            <p className="text-base text-yellow-300 sm:text-lg leading-relaxed">
-              {testimonialls[index]?.title}
-              <hr className="border-t border-yellow-300 w-11 mx-auto lg:mx-0" />
-            </p>
-            <p className="text-white text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0 mt-4">
-              {testimonialls[index]?.description}
-            </p>
-          </div>
-        </motion.div>
+            <div className="w-full lg:w-1/2 px-4 sm:px-6 text-center lg:text-left">
+              <p className="text-base text-yellow-300 sm:text-lg leading-relaxed">
+                {testimonialls[index]?.title}
+                <hr className="border-t border-yellow-300 w-11 mx-auto lg:mx-0" />
+              </p>
+              <p className="text-white text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0 mt-4">
+                {testimonialls[index]?.description}
+              </p>
+            </div>
+          </motion.div>
 
-      <div className="flex justify-center -mt-6 space-x-2 w-full">
-        {testimonialls.map((_, i) => (
-          <button
-            key={i}
-            className={`h-3 w-3 rounded-full transition-all duration-300 cursor-pointer ${
-              index === i ? "bg-yellow-400 w-4" : "bg-gray-500"
-            }`}
-            onClick={() => setIndex(i)}
-          />
-        ))}
-      </div>
-    </div>
-        
+          <div className="flex justify-center -mt-6 space-x-2 w-full">
+            {testimonialls.map((_, i) => (
+              <button
+                key={i}
+                className={`h-3 w-3 rounded-full transition-all duration-300 cursor-pointer ${
+                  index === i ? "bg-yellow-400 w-4" : "bg-gray-500"
+                }`}
+                onClick={() => setIndex(i)}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </Element>
       

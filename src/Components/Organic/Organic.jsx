@@ -64,52 +64,44 @@ function Organic() {
 
   return (
     
-  <div className=" px-4 sm:px-8 md:px-16 bg-black w-full flex flex-col lg:flex-row items-center relative">
-  <div className="px-4 h-full bg-black sm:px-8 md:px-16 w-full flex flex-col items-center">
-    {/* Title Section */}
-    <div className="text-center mb-4">
-      <h1 className="text-yellow-300 lg:text-xl text-1xl sm:text-2xl mb-6">
-        All Organic
-      </h1>
-      <h1 className="text-white text-3xl lg:text-6xl sm:text-2xl py-1">
-        Cut through the noise
-      </h1>
-      <p className="text-gray-400 mt-7 lg:text-2xl text-center lg:max-w-2xl lg:mx-auto">
-        Our team helps you stand out and become a thought leader in
-        your industry which will help you build your brand better, get leads, and
-        investment.
-      </p>
-    </div>
-
-    {/* Stats Section */}
-    <div
-      id="stats-section"
-      className="flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-16 lg:gap-40 text-center mt-10"
-    >
-      <div className="flex flex-col items-center">
-        <div className="text-4xl font-bold text-yellow-300">
-          {inView && <CountUp start={0} end={100} duration={2} />}M+
+    <div className="px-4 sm:px-8 md:px-16 bg-black w-full flex flex-col lg:flex-row items-center relative">
+      <div className="px-4 h-full bg-black sm:px-8 md:px-16 w-full flex flex-col items-center">
+        <div className="text-center mb-4">
+          <h1 className="text-yellow-300 lg:text-xl text-1xl sm:text-2xl mb-6">
+            All Organic
+          </h1>
+          <h1 className="text-white text-3xl lg:text-6xl sm:text-2xl py-1">
+            Cut through the noise
+          </h1>
+          <p className="text-gray-400 mt-7 lg:text-2xl text-center lg:max-w-2xl lg:mx-auto">
+            Our team helps you stand out and become a thought leader in your industry which will help you build your brand better, get leads, and investment.
+          </p>
         </div>
-        <p className="text-sm text-white mt-2">Views On LinkedIn</p>
-      </div>
 
-      <div className="flex flex-col items-center">
-        <div className="text-4xl font-bold text-yellow-300">
-          {inView && <CountUp start={0} end={21} duration={2} />}+
+        <div id="stats-section" className="flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-16 lg:gap-40 text-center mt-10">
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-yellow-300">
+              {inView && <CountUp start={0} end={100} duration={2} />}M+
+            </div>
+            <p className="text-sm text-white mt-2">Views On LinkedIn</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-yellow-300">
+              {inView && <CountUp start={0} end={21} duration={2} />}+
+            </div>
+            <p className="text-sm text-white mt-2">Countries</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className="text-4xl font-bold text-yellow-300">
+              {inView && <CountUp start={0} end={172} duration={2} />}+
+            </div>
+            <p className="text-sm text-white mt-2">Happy Clients</p>
+          </div>
         </div>
-        <p className="text-sm text-white mt-2">Countries</p>
-      </div>
 
-      <div className="flex flex-col items-center">
-        <div className="text-4xl font-bold text-yellow-300">
-          {inView && <CountUp start={0} end={172} duration={2} />}+
-        </div>
-        <p className="text-sm text-white mt-2">Happy Clients</p>
-      </div>
-    </div>
-
-    {/* New Section - Rounded Images with Names */}
-    <div className="w-full mt-16 relative">
+        <div className="w-full mt-16 relative">
       <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"></div>
       <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none"></div>
 
@@ -133,22 +125,26 @@ function Organic() {
         className="w-full"
       >
         {people.map((person, index) => (
-          <SwiperSlide key={index} className="flex flex-col items-center">
-            <img
-              src={person.img}
-              alt={person.name}
-              className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full object-cover shadow-lg border-2 border-yellow-300"
-            />
-            <p className="text-white text-sm sm:text-lg font-medium mt-3 text-center lg:mr-15 mr-10 sm:mr-10">
-              {person.name}
-            </p>
+          <SwiperSlide key={index} className="flex flex-col items-center justify-center text-center">
+            <div className="flex flex-col items-center">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-28 lg:h-28 rounded-full overflow-hidden border-2 border-yellow-300 shadow-lg">
+                <img
+                  src={person.img}
+                  alt={person.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <p className="text-white text-sm sm:text-lg font-medium mt-3 w-full text-center">
+                {person.name}
+              </p>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
 
-  </div>
-     </div>
+      </div>
+    </div>
 
   )
 }

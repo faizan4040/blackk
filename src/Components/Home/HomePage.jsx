@@ -97,7 +97,10 @@ function HomePage() {
              opacity-80 z-0"
           />
            <div className="relative w-full flex flex-col items-center">
-      <div className="absolute lg:top-45 lg:left-30 top-12 left-10 p-4 text-white z-20 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+      <div className="absolute lg:top-40 lg:left-30 top-12 left-10 p-4 text-white z-20 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+      <div className="text-black lg:text-xl text-xs mb-10 -mt-2 bg-yellow-300 lg:w-25 w-13 rounded-4xl ">Views</div>
+      </div>           
+      <div className="absolute lg:top-48 lg:left-30 top-15 left-10 p-4 text-white z-20 lg:text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
         {counter}M+
       </div>
       <div className="relative w-full flex justify-center">
